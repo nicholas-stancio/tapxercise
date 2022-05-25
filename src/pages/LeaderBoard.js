@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.sass';
+import '../styles/index.sass';
 
 class Leaderboard extends React.Component {
     constructor() {
