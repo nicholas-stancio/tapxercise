@@ -1,6 +1,8 @@
 import Leaderboard from './pages/LeaderBoard';
+import ChangePlayer from './pages/changePlayer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './styles/App.css';
+
 
 function App() {
   // return (
@@ -10,11 +12,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Leaderboard />}>
-          {/* <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} /> */}
-          {/* Reroute semua ke leaderboard */}
-          <Route path="*" element={<Leaderboard />} /> 
+        </Route>
+        <Route path="/change-player" element={<ChangePlayer />}>
         </Route>
       </Routes>
     </BrowserRouter>
